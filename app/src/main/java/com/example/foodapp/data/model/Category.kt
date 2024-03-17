@@ -1,4 +1,4 @@
-package com.example.foodapp.model
+package com.example.foodapp.data.model
 
 import java.util.UUID
 

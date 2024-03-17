@@ -1,10 +1,10 @@
-package com.example.foodapp.adapter
+package com.example.foodapp.presentation.menuList.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foodapp.databinding.ItemCategoryBinding
-import com.example.foodapp.model.Category
+import com.example.foodapp.data.model.Category
 
 class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
     private var data = mutableListOf<Category>()
