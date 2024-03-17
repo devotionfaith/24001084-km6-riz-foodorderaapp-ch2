@@ -1,13 +1,12 @@
-package com.example.foodapp.adapter
+package com.example.foodapp.presentation.menuList.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.foodapp.databinding.ItemMenuBinding
-import com.example.foodapp.model.Menu
+import com.example.foodapp.data.model.Menu
 import com.example.foodapp.utils.toIndonesianFormat
 
-class MenuAdapter : RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
+class MenuListAdapter : RecyclerView.Adapter<MenuListAdapter.MenuViewHolder>() {
     private var data = mutableListOf<Menu>()
 
     fun submitData(items: List<Menu>) {

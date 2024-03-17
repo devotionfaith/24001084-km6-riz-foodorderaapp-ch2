@@ -1,16 +1,17 @@
-package com.example.foodapp
+package com.example.foodapp.presentation.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.foodapp.adapter.CategoryAdapter
-import com.example.foodapp.adapter.MenuAdapter
+import com.example.foodapp.R
+import com.example.foodapp.presentation.menuList.adapter.CategoryAdapter
+import com.example.foodapp.presentation.menuList.adapter.MenuListAdapter
 import com.example.foodapp.databinding.ActivityMainBinding
-import com.example.foodapp.model.Category
-import com.example.foodapp.model.Menu
+import com.example.foodapp.data.model.Category
+import com.example.foodapp.data.model.Menu
 
 class MainActivity : AppCompatActivity() {
     private var categoryadapter = CategoryAdapter()
-    private var menuadapter = MenuAdapter()
+    private var menuadapter = MenuListAdapter()
     private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
@@ -46,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             Menu(image = R.drawable.ic_menu_5, price = 20000.0, name = "Nasi Kuning"),
             Menu(image = R.drawable.ic_menu_6, price = 18000.0, name = "Nasi Goreng"),
             Menu(image = R.drawable.ic_menu_7, price = 22000.0, name = "Nila Goreng"),
-            Menu(image = R.drawable.ic_menu_8, price = 18000.0, name = "Nasi Bakar"),
+            Menu(image = R.drawable.ic_menu_8, price = 18000.0, name = "Nasi Bakar")
         )
         binding.rvMenu.apply {
             adapter = this@MainActivity.menuadapter
