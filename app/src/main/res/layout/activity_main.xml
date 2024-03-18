@@ -7,6 +7,4 @@
     android:background="#ffffff"
     tools:context=".presentation.main.MainActivity">
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
